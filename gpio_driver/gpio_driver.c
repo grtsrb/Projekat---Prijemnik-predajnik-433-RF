@@ -555,7 +555,7 @@ static ssize_t gpio_driver_write(struct file *filp, const char *buf, size_t len,
     }
     else
     {
-        printk(KERN_INFO "Preuzeta vrednost sa prijemnika: %d\n", gpio_driver_buffer[0]);
+        printk(KERN_INFO "Value recieved from Reciever module: %d\n", gpio_driver_buffer[0]);
         return len;
     }
 }
